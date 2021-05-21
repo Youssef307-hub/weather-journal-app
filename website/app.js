@@ -1,14 +1,14 @@
 /* Global Variables */
 
 // Personal API Key for OpenWeatherMap API
-const API_KEY = '&appid=6bf1783c3eb2df1c08a474cdde6d4f10';
+const API_KEY = '&appid=6bf1783c3eb2df1c08a474cdde6d4f10&units=metric';
 
 // The base URL
 const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?zip=';
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
+let newDate = d.getMonth()+1 + '.' + d.getDate() + '.' + d.getFullYear();
 
 
 
@@ -92,7 +92,7 @@ const updateInterface = async () => {
 
         // Getting the Divs of the date, temp and content using getElementByID method the uppdating it's inner HTML with the fetched data
         document.getElementById('date').innerHTML = `Date: ${myData.date}`;
-        document.getElementById('temp').innerHTML = `Temprature: ${myData.temprature}`;
+        document.getElementById('temp').innerHTML = `Temprature: ${myData.temprature} &#8451`;
         document.getElementById('content').innerHTML = `Your feeling: ${myData.userResponse}`;
 
     } catch (E) {
