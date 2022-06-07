@@ -1,8 +1,7 @@
 /* Global Variables */
 
 // Personal API Key for OpenWeatherMap API
-const API_KEY = '&appid=6bf1783c3eb2df1c08a474cdde6d4f10&units=metric';
-
+const API_KEY = '&appid=AddYourOwnKeyHere&units=metric';
 // The base URL
 const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?zip=';
 
